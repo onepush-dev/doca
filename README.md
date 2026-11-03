@@ -2,7 +2,7 @@
 
 One-click Railway template for [Doca](https://github.com/workhold/doca) 0.2.32 (MIT): a self-hosted workspace for real-time co-edited docs, sheets, slides, canvas and knowledge bases, with an optional AI assistant and MCP tools.
 
-Deploy button: added after the template is generated.
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/6d515Q)
 
 ## What this repo adds
 

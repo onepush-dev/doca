@@ -13,7 +13,7 @@ if [ -z "${DOCA_ORIGIN:-}" ] || [ "${DOCA_ORIGIN}" = "https://" ]; then
   else echo "DOCA_ORIGIN is not set and the service has no public domain" >&2; exit 1; fi
 fi
 export DOCA_ORIGIN
-export DOCA_PORT="${PORT:-39120}" DOCA_HOST="${DOCA_HOST:-0.0.0.0}"
+export DOCA_PORT="${PORT:-8080}" DOCA_HOST="${DOCA_HOST:-0.0.0.0}"
 if [ -z "${DOCA_CREDENTIAL_MASTER_KEY:-}" ]; then
   echo "DOCA_CREDENTIAL_MASTER_KEY is required (64 hex chars, keep it forever)" >&2; exit 1
 fi

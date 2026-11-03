@@ -10,7 +10,7 @@ USER root
 COPY railway/patch-health-host.mjs /tmp/patch-health-host.mjs
 RUN node /tmp/patch-health-host.mjs && rm /tmp/patch-health-host.mjs
 COPY --chmod=755 railway/railway-start.sh /app/railway-start.sh
-ENV PORT=39120 \
+ENV PORT=8080 \
     DOCA_ADMIN_LOGIN=admin \
     DOCA_TRUST_PROXY=10.0.0.0/8,100.64.0.0/10,172.16.0.0/12,192.168.0.0/16,fd00::/8 \
     DOCA_AI_SQLITE_PATH=/data/ai.db \
